@@ -74,11 +74,11 @@ let night = document.getElementById("night");
     document.getElementById("clockimage").src = "./images/Component 31 GÇô 1.jpg";
   }
   if (parseInt(nap.value) === hours) {
-    document.getElementById("settime").innerHTML = "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
+    document.getElementById("settime").innerHTML = "GET SOME TEA..!";
     document.getElementById("clockimage").src = "./images/lunch_image.png";
   }
   if (parseInt(night.value) === hours) {
-    document.getElementById("settime").innerHTML = "CLOSE YOUR EYES AND GO TO SLEEP";
+    document.getElementById("settime").innerHTML = "GO TO SLEEP";
     document.getElementById("clockimage").src = "./images/Component 32 GÇô 1.jpg";
   }
   let timing = document.getElementsByClassName("timing");
