@@ -10,17 +10,15 @@ function ClockStart(){
 
     if(hours>12){
         hours = hours -12;
-        let ampm = document.getElementById("ampm");
+    }
+    if (hours>=12){
+      let ampm = document.getElementById("ampm");
         ampm.innerText="PM";
-        // let greeting=document.getElementById("greeting");
-        // greeting.innerHTML="Good Afternoon!!"
-
     }
     else{
         let ampm = document.getElementById("ampm");
         ampm.innerText="AM";
-        // let greeting=document.getElementById("greeting");
-        // greeting.innerHTML="Good Morning!!"
+ 
     };
  
     let hrs =document.getElementById("hrs");
