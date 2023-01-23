@@ -66,18 +66,18 @@ let nap = document.getElementById("nap");
 let night = document.getElementById("night");
 
   if (parseInt(wakeUp.value) === hours) {
-    document.getElementById("settime").innerHTML = "GRAB SOME HEALTHY BREAKFAST!!!";
+    document.getElementById("settime").innerHTML = "GRAB SOME BREAKFAST!";
     document.getElementById("clockimage").src = "./images/Component 30 – 1.svg";
   }
-  if (parseInt(lunch.value) === hours) {
-    document.getElementById("settime").innerHTML = "LET'S HAVE SOME LUNCH !!";
+  else if (parseInt(lunch.value) === hours) {
+    document.getElementById("settime").innerHTML = "LET'S HAVE SOME LUNCH !";
     document.getElementById("clockimage").src = "./images/Component 31 GÇô 1.jpg";
   }
-  if (parseInt(nap.value) === hours) {
+  else if (parseInt(nap.value) === hours) {
     document.getElementById("settime").innerHTML = "GET SOME TEA..!";
     document.getElementById("clockimage").src = "./images/lunch_image.png";
   }
-  if (parseInt(night.value) === hours) {
+  else if (parseInt(night.value) === hours) {
     document.getElementById("settime").innerHTML = "GO TO SLEEP";
     document.getElementById("clockimage").src = "./images/Component 32 GÇô 1.jpg";
   }
