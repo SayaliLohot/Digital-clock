@@ -8,19 +8,10 @@ function ClockStart(){
   let seconds = date.getSeconds();
   console.log(hours, minutes, seconds); 
 
-    if(hours>12){
-        hours = hours -12;
-    }
-    if (hours>=12){
-      let ampm = document.getElementById("ampm");
-        ampm.innerText="PM";
-    }
-    else{
-        let ampm = document.getElementById("ampm");
-        ampm.innerText="AM";
- 
-    };
- 
+  if(hours>12){
+    hours = hours -12;
+}
+   
     let hrs =document.getElementById("hrs");
     hrs.innerText = hours;
     let mins =document.getElementById("mins");
@@ -29,6 +20,7 @@ function ClockStart(){
     secs.innerText = seconds;
 }
 
+
 setInterval(()=>{
     ClockStart();
 },1000);
@@ -36,6 +28,16 @@ setInterval(()=>{
 
 let date = new Date();
 let hours = date.getHours();
+
+if (hours>=12){
+  let ampm = document.getElementById("ampm");
+    ampm.innerText="PM";
+}
+else if(hours<12) {
+    let ampm = document.getElementById("ampm");
+    ampm.innerText="AM";
+};
+
 
 //set alarm to party time
 let button =document.getElementById("button");
