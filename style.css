@@ -7,8 +7,8 @@
 body {
     background-color: #3d087b;
     font-family: "Manrope", sans-serif;
-    height: 100vh;
-    
+    height: max-content;
+
 }
 
 .container {
@@ -21,8 +21,8 @@ body {
 
 .innercontainer1 {
     /* border: 2px solid black; */
-    /* width: 45vw;
-    height: 95vh; */
+    width: 45vw;
+    height: 95vh;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -58,6 +58,8 @@ body {
     /* margin-bottom: 52px; */
     align-items: center;
     justify-content: space-between;
+    /* box-sizing: border-box; */
+
 }
 .line{
     color: #C2C2C2;
@@ -81,26 +83,37 @@ body {
     padding: 2px 20px;
     border-radius: 5px;
     text-align: left;
+    box-sizing: border-box;
+
 }
 .card3{
     margin-top: 11px;
     display: flex;
     justify-content: space-between;
     color: #f25cfe;
+    box-sizing: border-box;
+
 }
 .button{
 color: black;
 padding: 10px 90px;
 border-radius: 4px;
-font-size: 1.5em;
-font-weight: 600;
+font-size: 1em;
+font-weight: bold;
 text-decoration: none;
 display: block;
-width: 95%;
+width: 300px;
 margin: 11px 20px 0 0;
+border: none;
 background: transparent linear-gradient(113deg, #6e54ec 0%, #cb52f8 40%, #fc5eff 81%, #f1a7c5 100%);
 }
 
+/* .button p{
+    content: "Set Alarm";
+}
+.button:hover p{
+    content: "Party Time";
+} */
 .card32{
     border: 1px solid #ededed;
     border-radius: 10px;
@@ -187,4 +200,41 @@ background: transparent linear-gradient(113deg, #6e54ec 0%, #cb52f8 40%, #fc5eff
     top: 36px;
     right: 156px;
     width: 374px;
+}
+@media only screen and (min-width: 500px) and (max-width:1200px) {
+
+    .container {
+        flex-direction: column;
+        height: max-content;
+        width: max-content;
+        margin: auto;
+    
+    }
+    
+    .innercontainer1 {
+        width: auto;
+        height: max-content;
+        margin: auto;
+    
+    }
+    
+    .innercontainer2 {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+
+    }
+    
+    .time.background1{
+        position: relative;
+        top: -651px;
+        right: -58px;
+      
+    }  
+    .time.background2{  
+        position: relative;
+        top: -766px;
+        right: -96px
+    }
 }
